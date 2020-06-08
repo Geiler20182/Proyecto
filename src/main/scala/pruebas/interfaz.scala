@@ -27,7 +27,7 @@ object Main extends App{
             case Failure(f) => println("Error a la hora de escoger")
         }
 
-         num match{
+        num match{
             case 1 => chekIn(pasajero)
             case 2 => println("En creación")
             case 3 => println("En creación")
