@@ -1,0 +1,5 @@
+package Usuario
+
+class Persona {
+    
+}
