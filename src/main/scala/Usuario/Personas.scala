@@ -1,5 +1,0 @@
-package Usuario
-
-class Persona {
-    
-}

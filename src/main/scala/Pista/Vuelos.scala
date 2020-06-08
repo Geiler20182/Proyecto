@@ -1,6 +1,6 @@
 package Pista
 
-import Usuario._
+import personas._
 
 class Vuelos {
     // Atributos

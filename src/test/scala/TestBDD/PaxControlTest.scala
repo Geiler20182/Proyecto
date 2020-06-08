@@ -2,7 +2,7 @@ import org.scalatest.GivenWhenThen
 import org.scalatest.FeatureSpec
 import Controles._
 import Pista._
-import Usuario._
+import personas._
 
 class PaxControlTest extends FeatureSpec with GivenWhenThen {
     var paxCotrol : PaxControl = new PaxControl

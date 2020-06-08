@@ -1,7 +1,7 @@
 package Controles
 
 import Pista._
-import Usuario._
+import personas._
 
 class Reporte {
     // Atributos
