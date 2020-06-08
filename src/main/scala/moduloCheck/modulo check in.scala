@@ -197,7 +197,7 @@ class ModuloCheckIn(pasa : Pasajero){
             }
 
             def mascotaCabina(pasajero : Pasajero){
-                //Me crea un servicio de mascota que van en cabina
+                //Me crea un servicio de mascota que van en cabinaa
                 var servicio : ServicioMascotaCabina = new ServicioMascotaCabina
                 println("El precio por este servicio es de " + checkIn.cobro)
                 var num : Try[Int] = Try(StdIn.readInt())
