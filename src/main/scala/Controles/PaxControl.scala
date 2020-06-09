@@ -4,12 +4,13 @@ import personas._
 import Pista._
 import scala.io._
 
-class PaxControl {
+class PaxControl(nuevos_vuelos : List[Vuelo], aviones : List[Avion]) {
     // Atributos
-    var _vuelos : List[Vuelos] = List()
-    var _aviones : List[Avion] = List()
-    var _reporte : Reporte = _
+    var _vuelos : List[Vuelo] = nuevos_vuelos
+    var _aviones : List[Avion] = aviones
+    var _reporte : Reporte = new  Reporte
 
+    def vuelos = _vuelos
     // Métodos
     def enviarInformacion(indiceVuelo : Int) : Tripulacion = return _vuelos(indiceVuelo)._tripulacion
     def asignarComida(indiceVuelo : Int, cantComida : Int) : Unit = _vuelos(indiceVuelo)._comidas = cantComida
@@ -28,7 +29,7 @@ class PaxControl {
         _reporte._tripulantesVuelo = _vuelos(indiceVuelo)._tripulacion
         _reporte._referenciaVuelo = _vuelos(indiceVuelo)._referencia
         _reporte._avionVuelo = _vuelos(indiceVuelo)._avion
-        _reporte._estadoVuelo = _vuelos(indiceVuelo)._estadoVuelo
+        _reporte._estadoVuelo = _vuelos(indiceVuelo).estadoVuelo
         _reporte._cantidadPasajeros = _vuelos(indiceVuelo)._pasajeros.length
         _reporte._cantidadComida = _vuelos(indiceVuelo)._comidas
         _reporte._pasajerosVuelo = _vuelos(indiceVuelo)._pasajeros
@@ -36,6 +37,8 @@ class PaxControl {
 
         return _reporte
     }
+    def asignarPrimerPasajero(indiceVuelo : Int, nombre : String) : Unit =  _vuelos(indiceVuelo).primerPasajero_=(nombre)
+
     def agregarMatricula(indiceAvion : Int, matricula : String) : Unit = _vuelos(indiceAvion)._avion._referencia = matricula
     def asignarNombres(nombresPilotos : List[String], nombresAzafatas : List[String], indiceVuelo : Int) : Unit = {
         var n : Int = 0

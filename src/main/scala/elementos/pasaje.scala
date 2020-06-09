@@ -1,6 +1,6 @@
 package elementos
 
-class Pasaje(ini : String, fin : String){
+class Pasaje (ini : String, fin : String){
     //Atributos
     var _ciudadIni : String = ini
     var _ciudadFin : String = fin

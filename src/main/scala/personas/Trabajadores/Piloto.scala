@@ -1,15 +1,8 @@
 package personas
 
-class Piloto {
-    // Atributos
-    var _nombre : String = _
-    var _genero : String = _
-
-    // Getters
-    def nombre = _nombre
-    def genero = _genero
-
-    // Setters
-    def nombre_= (nuevoNombre : String) = _nombre = nuevoNombre
-    def genero_= (nuevoGenero : String) = _genero = nuevoGenero
+class Piloto(name : String, id : String, edad : Int) extends Persona{
+    //Atributos
+    override var _nombre : String = name
+    override var _id : String = id
+    override var _edad : Int = edad
 }

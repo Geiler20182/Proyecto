@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\main\scala\pruebas\interfaz.scala:366:86: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : personas.Pasajero[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m                            aeropuerto.getPaxControl().asignarPrimerPasajero(indice, pasa)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
