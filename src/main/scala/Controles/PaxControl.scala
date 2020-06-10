@@ -21,7 +21,7 @@ class PaxControl(nuevos_vuelos : List[Vuelo], aviones : List[Avion]) {
         }
         return false
     }
-    def asignarVuelo(indiceVuelo : Int, avion : Avion) : Unit = {
+    def asignarAvion(indiceVuelo : Int, avion : Avion) : Unit = {
         _vuelos(indiceVuelo)._avion = avion
         _vuelos(indiceVuelo)._avion._estadoVuelo = true
     }
@@ -65,4 +65,6 @@ class PaxControl(nuevos_vuelos : List[Vuelo], aviones : List[Avion]) {
         return true
     }
     def asignarHoraFinal(hora : String, indiceVuelo : Int) : Unit = _vuelos(indiceVuelo)._horaLlegadaFinal = hora
+
+    def agregarTripulacion(indice : Int, trip : Tripulacion) : Unit = _vuelos(indice)._tripulacion = trip
 }

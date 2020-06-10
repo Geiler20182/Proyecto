@@ -28,7 +28,8 @@ class Aeropuerto {
     def getSalaAbordaje() : SalaAbordaje = return _sala_abordaje
     def getPaxControl() : PaxControl = return _pax_control
     def getPasajeros() : List[Pasajero] = return _pasajeros
-    
+    def getAviones() : List[Avion] = return _aviones
+
     // Metodos
 
     def aplicarCheckIn(pasajero : Pasajero) : Pasajero = {

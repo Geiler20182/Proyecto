@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\main\scala\pruebas\interfaz.scala:92:23: not found: value verAvionesEnPista[0m
-[0m[[0m[31merror[0m] [0m[0m            case 8 => verAvionesEnPista()[0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\main\scala\pruebas\interfaz.scala:369:21: Missing closing brace `}' assumed here[0m
+[0m[[0m[31merror[0m] [0m[0m                    }[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

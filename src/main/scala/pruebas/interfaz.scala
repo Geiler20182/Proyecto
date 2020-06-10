@@ -245,6 +245,7 @@ object Main extends App{
                     case Success(s) => num = s
                     case Failure(f) => num = 0
                 }
+                println()
                 num match {
                     case 1 => {
                         
@@ -260,55 +261,155 @@ object Main extends App{
                             val indice = aeropuerto.indiceVuelo(vuelo.referencia)
                             aeropuerto.getPaxControl().asignarComida(indice, cantidad)
                             aeropuerto.update()
-                            println("Se asignaron las comidas correctamente")
+                            println("\n----------------------------------------------")
+                            println("| Se asignaron las comidas correctamente       |")
+                            println("----------------------------------------------\n") 
                         }
                         else println("Error al asignar las comidas")
 
                     }
                     case 2 => {
                         val indice = aeropuerto.indiceVuelo(vuelo.referencia)
-                        println("Reporte asignado...")
                         val nuevo_reporte = aeropuerto.getPaxControl().asignarReporte(indice, "00:00")
                         aeropuerto.agregarReporte(nuevo_reporte)
                         aeropuerto.update()
+                        println("\n----------------------------------------------")
+                        println("| Reporte asignado correctamente             |")
+                        println("----------------------------------------------\n")
+
 
                     }
                     case 3 => {
 
-                        println("Ingrese la matricula para el avión:")
+                        /*println("Ingrese la matricula para el avion:")
                         val matricula  = StdIn.readLine()
                         val indice = aeropuerto.indiceVuelo(vuelo.referencia)
                         aeropuerto.getPaxControl().agregarMatricula(indice, matricula)
-                        aeropuerto.update()
+                        aeropuerto.update()*/
+                        println("\n---------------------------------------------------")
+                        println("| ALERTA: No puedes cambiar la matricula del avion |")
+                        println("---------------------------------------------------\n")
                     }
                     case 4 => {
                         
                         val indice = aeropuerto.indiceVuelo(vuelo.referencia)
-                        val cantidad_pilotos = aeropuerto.getVuelos()(indice).tripulacion.pilotos.length
-                        val cantidad_azafatas = aeropuerto.getVuelos()(indice).tripulacion.azafatas.length
 
-                        var nombres_pilotos : List[String] =  List()
-                        var nombres_azafatas : List[String] =  List()
+                        if ( aeropuerto.getVuelos()(indice).tripulacion == null) {
+                            
+                            var azafatas : List[Azafata] = List()
+                            var pilotos : List[Piloto] = List()
 
-                        var iter : Int = 0
-                        while (iter < cantidad_pilotos) {
-                            println("Ingrese el nombre para el piloto #" + iter + 1)
-                            val nombre = StdIn.readLine()
-                            nombres_pilotos = nombre :: nombres_pilotos
-                            iter += 1
+                            println("Intrese la cantidad de pilotos: ")
+                            var n : Try[Int] = Try(StdIn.readInt())
+                            var cantidad_pilotos : Int = 0
+
+                            n match {
+                                case Success(s) => cantidad_pilotos = s
+                                case Failure(f) => cantidad_pilotos = 0
+                            }
+
+                            println("Intrese la cantidad de azafatas: ")
+                            var a : Try[Int] = Try(StdIn.readInt())
+                            var cantidad_azafatas: Int = 0
+                            var iter : Int = 0
+
+                            
+                            a match {
+                                case Success(s) => cantidad_azafatas = s
+                                case Failure(f) => cantidad_azafatas = 0
+                            }
+                            println("-------------------------------------------------")
+                            println("|                PILOTOS                        |")
+                            while (iter < cantidad_pilotos) {
+                                
+                                println("-------------------------------------------------")
+                                println("Ingrese el nombre para el piloto #" + (iter + 1))
+                                val nombre = StdIn.readLine()
+                                println("Ingrese el documento para el piloto #" + (iter + 1))
+                                val id =  StdIn.readLine()
+                                println("Ingrese la edad para el piloto #" + (iter + 1))
+                                var e : Try[Int] = Try(StdIn.readInt())
+                                var edad : Int = 0
+                                
+                                e match {
+                                    case Success(s) => edad = s
+                                    case Failure(f) => edad = 0
+                                }
+
+                                pilotos = new Piloto(nombre, id, edad) :: pilotos
+                                iter += 1
+                            }
+
+                            iter = 0
+                            println("-------------------------------------------------")
+                            println("|                AZAFATAS                       |")
+                            while (iter < cantidad_azafatas) {
+
+
+                                println("-------------------------------------------------")
+                                println("Ingrese el nombre para la azafata #" + (iter + 1))
+                                val nombre = StdIn.readLine()
+                                println("Ingrese el documento para la azafata #" + (iter + 1))
+                                val id =  StdIn.readLine()
+                                println("Ingrese la edad para la azafata #" + (iter + 1))
+                                var e : Try[Int] = Try(StdIn.readInt())
+                                var edad : Int = 0
+                                
+                                e match {
+                                    case Success(s) => edad = s
+                                    case Failure(f) => edad = 0
+                                }
+                                
+                                azafatas = new Azafata(nombre, id, edad) :: azafatas
+                                iter += 1
+                            }
+
+                            val indice = aeropuerto.indiceVuelo(vuelo.referencia)
+                            val tripulacion : Tripulacion =  new Tripulacion(pilotos, azafatas)
+                            aeropuerto.getPaxControl().agregarTripulacion(indice, tripulacion)
+                            aeropuerto.update()
+                            println("\n----------------------------------------------")
+                            println("| Tripulacion agregada correctamente         |")
+                            println("----------------------------------------------\n")
                         }
-                        iter = 0
-                        while (iter < cantidad_azafatas) {
-                            println("Ingrese el nombre para la azafata #" + (iter + 1))
-                            val nombre = StdIn.readLine()
-                            nombres_azafatas = nombre :: nombres_azafatas
-                            iter += 1
+
+                        else {
+                            println("\n----------------------------------------------")
+                            println("| El vuelo ya tiene tripulacion              |")
+                            println("----------------------------------------------\n")
                         }
 
-                        println("Nombres agregados correctamente")
-                        aeropuerto.update()
                     }
                     case 5 => {
+
+
+                        if (vuelo.avion != null) {
+
+                            val indice = aeropuerto.indiceVuelo(vuelo.referencia)
+                            println("\nIngrese la cantidad de pasajeros que desea asignar al vuelo: ")
+                            var cantidad : Try[Int] = Try(StdIn.readInt())
+                            var num : Int = 0;
+                            cantidad match{
+                                case Success(s) => num = s
+                                case Failure(f) => num = 0
+                            }
+                            if (num > 0 &&  (vuelo.cantidadPasajeros + num) < vuelo.avion.cantidadPasajeros) {
+                                aeropuerto.getPaxControl().asignarPasajeros(num, indice)
+                                aeropuerto.update()
+                                println("\n----------------------------------------------")
+                                println("| Se asignaron correctamente los pasajeros   |")
+                                println("----------------------------------------------\n")
+                            }
+
+                            else {
+                                println("Hubo un error al asignar los pasajeros")
+                            }
+                        } else {
+                            println("\n------------------------------------------------")
+                            println("| ALERTA: El vuelo no tiene un avion registrado |")
+                            println("------------------------------------------------\n")
+                        }
+
 
                     }
                     case 6 => {
@@ -324,6 +425,9 @@ object Main extends App{
                         if (dia > 0 && dia <= 31) {
                             aeropuerto.getPaxControl().asignarSalida(dia, indice)
                             aeropuerto.update()
+                            println("\n----------------------------------------------")
+                            println("| Dia agregado correctamente                  |")
+                            println("----------------------------------------------\n")
                         }
 
 
@@ -336,8 +440,9 @@ object Main extends App{
                         
                         aeropuerto.getPaxControl().asignarSalidaHora(hora, indice)
                         aeropuerto.update()
-                        
-                        println("Hora de salida agregada correctamente")
+                        println("\n----------------------------------------------")
+                        println("|  de salida agregada correctamente          |")
+                        println("----------------------------------------------\n")
                     }
                     case 8 => {
                         val indice = aeropuerto.indiceVuelo(vuelo.referencia)
@@ -346,8 +451,9 @@ object Main extends App{
                         
                         aeropuerto.getPaxControl().asignarLlegadaHora(hora, indice)
                         aeropuerto.update()
-                        
-                        println("Hora de llegada agregada correctamente")
+                        println("\n----------------------------------------------")
+                        println("| Hora de llegada agregada correctamente      |")
+                        println("----------------------------------------------\n")
                     }
                     case 9 => {
                         val indice = aeropuerto.indiceVuelo(vuelo.referencia)
@@ -356,8 +462,9 @@ object Main extends App{
                         
                         aeropuerto.getPaxControl().asignarInicioHora(hora, indice)
                         aeropuerto.update()
-                        
-                        println("Hora de abordaje agregada correctamente")
+                        println("\n----------------------------------------------")
+                        println("| Hora de abordaje agregada correctamente     |")
+                        println("----------------------------------------------\n")
                     }
                     case 10 => {
                         val indice = aeropuerto.indiceVuelo(vuelo.referencia)
@@ -366,8 +473,9 @@ object Main extends App{
                         
                         aeropuerto.getPaxControl().asignarHoraFinal(hora, indice)
                         aeropuerto.update()
-                        
-                        println("Hora de abordaje  agregada correctamente")
+                        println("\n----------------------------------------------")
+                        println("| Hora de abordaje  agregada correctamente    |")
+                        println("----------------------------------------------\n")
                     }
                     case 11 => {
                         
@@ -394,9 +502,43 @@ object Main extends App{
                             aeropuerto.update()
                         }
 
-                        else println("Error al agregar el pasajero")
+                        else  {
+                            println("\n----------------------------------------------")
+                            println("| Error al agregar el pasajero               |")
+                            println("----------------------------------------------\n")
+                        }
                     }
-                    case 12 => ver = false
+                    case 12 => {
+                        
+                        val indice = aeropuerto.indiceVuelo(vuelo.referencia)
+
+                        if (aeropuerto.getVuelos()(indice).avion == null) {
+                            aeropuerto.verAvionesEnPista() 
+                            println("Porfavor seleccione una avion:")
+                            var opcion : Try[Int] = Try(StdIn.readInt())
+                            var num : Int = 0
+                            
+                            opcion match{
+                                case Success(s) => num = s
+                                case Failure(f) => num = 0
+                            }
+                            
+                            if (aeropuerto.getAviones().length > 0 && num > 0 && num <= aeropuerto.getAviones().length) {
+                                val avioncito =  aeropuerto.getAviones()(num-1)
+                                aeropuerto.getPaxControl().asignarAvion(indice, avioncito)
+                                println("\n----------------------------------------------")
+                                println("| Se asigno correctamento el avion "+ avioncito.referencia + "       |")
+                                println("----------------------------------------------\n")
+                            }               
+                        }
+                        else {
+                            println("\n----------------------------------------------")
+                            println("| El vuelo ta tiene un avion asignado        |")
+                            println("----------------------------------------------\n")
+                        }
+
+                    }   
+                    case 13 => ver = false
                     case _ => println("Error al seleccionar una opción")
                 }
             }
@@ -411,7 +553,7 @@ object Main extends App{
                 println("[1] Asignar comidas")
                 println("[2] Asignar reporte")
                 println("[3] Agregar matricula")
-                println("[4] Asignar nombres a la tripulacion")
+                println("[4] Asignar tripulacion")
                 println("[5] Asignar pasajeros")
                 println("[6] Asignar dia de salida")
                 println("[7] Asignar hora de salida")
@@ -419,7 +561,8 @@ object Main extends App{
                 println("[9] Asignar hora de inico de abordaje")
                 println("[10] Asignar hora final de abordaje")
                 println("[11] Asignar el primer pasajero en abordar")
-                println("[12] salir")
+                println("[12] Asignar avion")
+                println("[13] salir")
                 println("==========================================\n")
             }
         }   

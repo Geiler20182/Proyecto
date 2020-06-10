@@ -180,6 +180,7 @@ object BBDD {
         
         try { 
 
+
             var origen : String = ""
             var destino : String = ""
             var silla : String = ""
@@ -191,7 +192,7 @@ object BBDD {
                 else if (lst(0) == "destino")
                     destino = lst(1)
             }   
-            return  new Pasaje(origen, destino)
+            return  new Pasaje(origen, destino, "")
 
 
         } catch {
@@ -205,6 +206,4 @@ object BBDD {
 
         return pasajeros
     }
-
-
 }
