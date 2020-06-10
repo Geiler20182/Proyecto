@@ -1,1 +1,41 @@
 2020.06.08 14:45:47 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO'
+2020.06.08 14:45:47 INFO  time: initialize in 0.54s
+2020.06.08 14:45:49 WARN  no build tool detected in workspace 'C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.06.08 14:46:18 INFO  no build target: using presentation compiler with only scala-library
+2020.06.08 14:46:21 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\pasajero.scala
+2020.06.08 14:47:53 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\persona.scala
+2020.06.08 14:48:14 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\pasajero.scala
+2020.06.08 14:48:25 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\trabajador.scala
+2020.06.08 14:48:51 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Azafata.scala
+2020.06.08 14:49:10 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
+2020.06.08 14:52:02 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Tripulacion.scala
+2020.06.08 14:52:12 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Azafata.scala
+2020.06.08 14:52:25 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Piloto.scala
+2020.06.08 14:52:55 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Estadisticas.scala
+2020.06.08 14:53:02 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Estadisticas.scala
+2020.06.08 14:53:03 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Piloto.scala
+2020.06.08 14:53:05 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Azafata.scala
+2020.06.08 14:53:06 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Tripulacion.scala
+2020.06.08 14:53:07 WARN  no build tool detected in workspace 'C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.06.08 14:53:07 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
+something's wrong: no file:///c%3A/Users/HP/Desktop/Universidad/Tercer%20Semestre/Programaci%C3%B3n%20Orientada%20a%20Objetos/Proyecto%20Final%20POO/src/main/scala/Controles/PaxControl.scala in List[<error>]RangePosition(file:///c%3A/Users/HP/Desktop/Universidad/Tercer%20Semestre/Programaci%C3%B3n%20Orientada%20a%20Objetos/Proyecto%20Final%20POO/src/main/scala/Controles/PaxControl.scala, 166, 166, 177)
+2020.06.08 14:54:41 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Trabajadores\Azafata.scala
+2020.06.08 14:54:44 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Trabajadores\Piloto.scala
+2020.06.08 14:54:47 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Trabajadores\Tripulacion.scala
+2020.06.08 14:54:55 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\persona.scala
+2020.06.08 14:55:47 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Avion.scala
+2020.06.08 14:55:49 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Vuelos.scala
+2020.06.08 14:55:54 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Vuelos.scala
+2020.06.08 14:56:05 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\trabajador.scala
+2020.06.08 14:56:43 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Reportes.scala
+2020.06.08 14:56:47 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Reportes.scala
+2020.06.08 14:56:51 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\test\scala\TestBDD\PaxControlTest.scala
+2020.06.08 14:56:55 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\test\scala\TestBDD\PaxControlTest.scala
+2020.06.08 14:57:01 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Avion.scala
+2020.06.08 15:00:41 INFO  shutting down Metals
+2020.06.08 18:42:45 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO'
+2020.06.08 18:42:47 INFO  time: initialize in 1.11s
+2020.06.08 18:42:48 WARN  no build tool detected in workspace 'C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.06.08 18:42:48 INFO  no build target: using presentation compiler with only scala-library
+2020.06.08 18:42:51 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
+2020.06.08 18:44:24 INFO  shutting down Metals
