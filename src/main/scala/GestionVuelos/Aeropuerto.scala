@@ -34,7 +34,11 @@ class Aeropuerto {
 
     def aplicarCheckIn(pasajero : Pasajero) : Pasajero = {
         var check : ModuloCheckIn = new ModuloCheckIn(pasajero)
+        println(pasajero.maleta)
+        println(pasajero.servicio)
         check.inicio()
+        println(pasajero.maleta)
+        println(pasajero.servicio)
 
         return check.getPasajero()
     }

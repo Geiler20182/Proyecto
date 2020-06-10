@@ -85,7 +85,8 @@ class CheckIn(dimMal : Array[Int], peso : Int, exc : Int, cob : Int){
     def asociarServico(pasajero : Pasajero, servicio : ServicioEspecial, num : Int) : Boolean ={
         //Le asigna un servicio especial a un pasajero siempre que halla pagado por este
         var ver : Boolean = false
-        if(servicio.descripcion == "ServicioSilla" || num >= _cobro){
+        if(servicio.descripcion == "servicio de silla" || num >= _cobro){
+            pasajero.servicio = servicio
             ver = true
         }
         return ver
@@ -103,5 +104,6 @@ class CheckIn(dimMal : Array[Int], peso : Int, exc : Int, cob : Int){
 
     def asignarEncargado(persona : Infante, encargado : Trabajador) : Unit ={
         //Le asigna a un infante un encargado de vuelo
+        persona.asistente = encargado
     }
 }

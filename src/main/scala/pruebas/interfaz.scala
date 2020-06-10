@@ -13,7 +13,7 @@ import moduloSalaAbordaje._
 import util.control.Breaks._
 import baseDeDatos._
 
-object Main extends App{
+class Main{
     
     var ver : Boolean = true
     var aeropuerto : Aeropuerto = new Aeropuerto()

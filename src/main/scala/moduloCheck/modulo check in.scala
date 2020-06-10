@@ -177,7 +177,6 @@ class ModuloCheckIn(pasa : Pasajero){
                 //Me crea el los servicios de siila
                 var servicio : ServicioSilla = new ServicioSilla
                 var ver : Boolean = checkIn.asociarServico(pasajero, servicio, 0)
-                pasajero.servicio = servicio
                 println("Servicio agregado con exito")
                 //println(pasajero.servicio.descripcion)+
                 
@@ -193,7 +192,6 @@ class ModuloCheckIn(pasa : Pasajero){
                     case Failure(f) => ver = checkIn.asociarServico(pasajero, servicio, 0) //Lo mas probable es que me devuelva false, a menos que el costo de servicio sea de 0
                 }
                 if(ver){
-                    pasajero.servicio = servicio
                     println("servicio agregado")
                 }
 
@@ -217,7 +215,6 @@ class ModuloCheckIn(pasa : Pasajero){
                     case Failure(f) => ver = checkIn.asociarServico(pasajero, servicio, 0) //Lo mas probable es que me devuelva false, a menos que el costo de servicio sea de 0
                 }
                 if(ver){
-                    pasajero.servicio = servicio
                     println("servicio agregado")
                 }
 
