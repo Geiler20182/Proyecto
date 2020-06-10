@@ -8,15 +8,18 @@ import scala.util._
 
 class ModuloCheckIn(pasa : Pasajero){
 
-    var dimensionMaleta : Array[Int] = pasa.maleta.dimension//Array(40, 55, 23) //Restricciones de las maletas
-    var peso : Int = pasa.maleta.peso//20 //Peso maximo de las maletas
+    var dimensionMaleta : Array[Int] = Array(40, 55, 23) //Restricciones de las maletas
+    var peso : Int = 20 //Peso maximo de las maletas
     var cobro : Int = 10 //El cobro por exceso y por
     var pasaje : Pasaje = pasa.pasaje// new Pasaje("Cali", "Bogota") //Creo un pasaje estandar
     var checkIn : CheckIn = new CheckIn(dimensionMaleta, peso, cobro, cobro) //Creo un modulo de checkIn con las restricciones
     var pasajero : Pasajero = pasa //Me iniciañiza el pasajero que yo quiero ver
     var infante : Infante = new Infante("Carrasco", "3", 15) //Guardo un infate como prueba
     var ver : Boolean = true
-    pasajero.pasaje = pasaje //Le añado el pasaje al pasajero para hacer pruebas
+    println("La ciudad de inicio del pasajero es " + pasaje.ciudadIni)
+    println("La ciudad de finalización del pasajero es " + pasaje.ciudadFin)
+    println("El vuelo del pasajero es " + pasaje.vuelo)
+    //pasajero.pasaje = pasaje //Le añado el pasaje al pasajero para hacer pruebas
 
     def inicio() : Unit = {
         //Esta función es la que me inicializa lo que seria el modulo del check in y sus funcionalidades

@@ -39,12 +39,15 @@ class Aeropuerto {
             while (cont < _pasajeros.length) {
                 if (_pasajeros(cont).nombre == nombre_pasajero) {
                     var check : ModuloCheckIn = new ModuloCheckIn(_pasajeros(cont))
+                    println(_pasajeros(cont).pasaje.silla)
+                    println(_pasajeros(cont).servicio)
+                    println(_pasajeros(cont).maleta)
                     check.inicio()
-                    _pasajeros(cont).pasaje = check.getPasajero().pasaje 
-                    _pasajeros(cont).maleta = check.getPasajero().maleta
-                    _pasajeros(cont).servicio = check.getPasajero().servicio
-                    _pasajeros(cont).chekeado = check.getPasajero().chekeado 
+                    println(_pasajeros(cont).pasaje.silla)
+                    println(_pasajeros(cont).servicio)
+                    println(_pasajeros(cont).maleta)
                     break 
+                    
                 }
                 cont += 1
             }
@@ -114,6 +117,5 @@ class Aeropuerto {
 
     def agregarReporte(r : Reporte) : Unit = {
         _reportes = r :: _reportes
-    }
-    
+    }  
 }   

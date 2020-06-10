@@ -43,21 +43,21 @@ object BBDD {
 
     vuelos = v1 :: v2 :: v3 :: vuelos
 
-    var t1 : Pasaje = new Pasaje("Bogota", "Miami")
-    var t2 : Pasaje = new Pasaje("Bogota", "Miami")
-    var t3 : Pasaje = new Pasaje("Bogota", "Paris")
+    var t1 : Pasaje = new Pasaje("Bogota", "Miami", v1.referencia)
+    var t2 : Pasaje = new Pasaje("Bogota", "Miami", v2.referencia)
+    var t3 : Pasaje = new Pasaje("Bogota", "Paris", v3.referencia)
 
-    t1.silla_=("A1")
-    t1.silla_=("A1")
-    t1.silla_=("A1")
+    t1.silla =("A1")
+    t1.silla =("A1")
+    t1.silla =("A1")
 
     var p1 : Pasajero = new Pasajero("Guido Salazar", "1", 20)
     var p2 : Pasajero = new Pasajero("Luis Salazar", "2", 20)
     var p3 : Pasajero = new Pasajero("Geiler Mejia", "3", 20)
 
-    p1.pasaje_=(t1)
-    p2.pasaje_=(t2)
-    p3.pasaje_=(t3)
+    p1.pasaje = (t1)
+    p2.pasaje = (t2)
+    p3.pasaje = (t3)
 
 
     pasajeros = p1 :: p2 :: p3 :: pasajeros
@@ -76,6 +76,4 @@ object BBDD {
 
         return pasajeros
     }
-
-
 }

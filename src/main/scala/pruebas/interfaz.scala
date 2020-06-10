@@ -32,16 +32,13 @@ object Main extends App{
         num match{
 
             case 1 => {
-
                 aeropuerto.verPasajeros()
                 println("Porfavor ingrese el número del pasajero:")
                 var op : Try[Int] = Try(StdIn.readInt())
                 op match{
                     case Success(s) => aeropuerto.checkIn(s)
                     case Failure(f) => println("Error a la hora de escoger")
-                }
-
-                
+                } 
             }
             case 2 => {
                 var vuelo : Vuelo = seleccionarVuelo()
@@ -74,11 +71,6 @@ object Main extends App{
             }
             case 10 => ver = false
             case _ => println("Error al intentar escoger un servicio")
-        }
-
-        def chekIn(pasajero : Pasajero) : Unit = {
-            var modulo : ModuloCheckIn = new ModuloCheckIn(pasajero)
-            modulo.inicio()
         }
 
         def seleccionarVuelo() : Vuelo = {
