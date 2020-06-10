@@ -1,0 +1,12 @@
+vuelos=1
+comidas=8
+combustible=6594.9
+dia_salida=23
+hora_salida=4:00PM
+hora_inicio=2:00PM
+hora_llegada=8:20PM
+hora_llegada_final=8:40PM
+avion=AirbusA320
+cantidad_pasajeros=4
+tripulacion=tripulacion1.txt
+pasajeros=pasajeros1.txt

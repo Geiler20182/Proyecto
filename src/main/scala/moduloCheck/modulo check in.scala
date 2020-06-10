@@ -172,7 +172,9 @@ class ModuloCheckIn(pasa : Pasajero){
                 var servicio : ServicioSilla = new ServicioSilla
                 var ver : Boolean = checkIn.asociarServico(pasajero, servicio, 0)
                 println("Servicio agregado con exito")
-                //println(pasajero.servicio.descripcion)
+                pasajero.servicio = servicio
+                //println(pasajero.servicio.descripcion)+
+                
             }
 
             def mascotaNormal(pasajero : Pasajero){
@@ -186,6 +188,7 @@ class ModuloCheckIn(pasa : Pasajero){
                 }
                 if(ver){
                     println("servicio agregado")
+                    pasajero.servicio = checkIn.pasajero.servicio
                 }
 
                 else{
@@ -209,6 +212,7 @@ class ModuloCheckIn(pasa : Pasajero){
                 }
                 if(ver){
                     println("servicio agregado")
+                    pasajero.servicio = checkIn.pasajero.servicio
                 }
 
                 else{
@@ -220,4 +224,6 @@ class ModuloCheckIn(pasa : Pasajero){
 
     def getPasajero() : Pasajero = return pasajero
 
+    def update() : Unit = {
+    }
 }

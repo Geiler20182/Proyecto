@@ -13,7 +13,7 @@ class Pasajero(name : String, id : String, edad : Int) extends Persona{
     //Propios
     var _pasaje : Pasaje = _
     var _maleta : Maleta = _
-    var _servicio : ServicioEspecial = _
+    var _servicio : ServicioEspecial = null
     var _chekeado : Boolean = false
 
     //Metodos

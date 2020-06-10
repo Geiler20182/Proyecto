@@ -3,6 +3,7 @@ package Pista
 class Avion(r : String) {
 
     // Atributos
+    
     var _referencia : String = r
     var _cantidadPasajeros : Int = 200
     var _estadoVuelo : Boolean = false

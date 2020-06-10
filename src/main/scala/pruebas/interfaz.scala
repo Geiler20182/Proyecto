@@ -11,7 +11,7 @@ import Pista._
 import Controles._
 import moduloSalaAbordaje._
 import util.control.Breaks._
-
+import baseDeDatos._
 
 object Main extends App{
     
@@ -21,6 +21,8 @@ object Main extends App{
     while(ver){
 
         menu()
+
+        println("Opcion: ")
         var opcion : Try[Int] = Try(StdIn.readInt())
         var num : Int = 0
 
@@ -34,10 +36,12 @@ object Main extends App{
             case 1 => {
 
                 aeropuerto.verPasajeros()
-                println("Porfavor ingrese el número del pasajero:")
+                println("\nPorfavor ingrese el número del pasajero:")
                 var op : Try[Int] = Try(StdIn.readInt())
                 op match{
-                    case Success(s) => aeropuerto.checkIn(s)
+                    case Success(s) =>  {
+                        aeropuerto.checkIn(s)
+                    }
                     case Failure(f) => println("Error a la hora de escoger")
                 }
 
@@ -54,12 +58,24 @@ object Main extends App{
                     paxControl(vuelo)
             } 
             case 4 => aeropuerto.verPasajeros()
-            case 5 => aeropuerto.verVuelos()
+            case 5 => aeropuerto.verVuelos(true)
             case 6 => {
                 
-                aeropuerto.verVuelos()
+                var cont : Int = 1
+                println("\n---------------------------------------")
+                println("|               VUELOS                |")
+                println("---------------------------------------")
+                for (v <- aeropuerto.getVuelos()) {
+                    println("[" + cont + "] " + v.referencia)
+                    cont +=  1
+                }
+                
+                println("---------------------------------------")
+                println("| Total vuelos : " + (cont-1) + "                    |")
+                println("---------------------------------------\n")
+
                 var cant_vuelos : Int = aeropuerto.getVuelos().length
-                println("Porfavor seleccione el vuelo que desea conocer el reporte:")
+                println("Porfavor seleccione el vuelo que desea conocer el reporte: ")
                 var opcion : Try[Int] = Try(StdIn.readInt())
                 var num : Int = 0;
                 opcion match{
@@ -72,13 +88,16 @@ object Main extends App{
                     aeropuerto.verReporte(num)
 
             }
-            case 10 => ver = false
+            case 7 => aeropuerto.crearVuelo()
+            case 8 => aeropuerto.verAvionesEnPista()
+            case 9 => ver = false
             case _ => println("Error al intentar escoger un servicio")
         }
 
         def chekIn(pasajero : Pasajero) : Unit = {
             var modulo : ModuloCheckIn = new ModuloCheckIn(pasajero)
             modulo.inicio()
+
         }
 
         def seleccionarVuelo() : Vuelo = {
@@ -86,18 +105,17 @@ object Main extends App{
             var cant_vuelos : Int = aeropuerto.getVuelos().length
 
             if (cant_vuelos > 0) {
-
-                aeropuerto.verVuelos()
+                aeropuerto.verVuelos(false)
                 println("Porfavor seleccione un vuelo:")
                 var opcion : Try[Int] = Try(StdIn.readInt())
-                var num : Int = 0;
+                var num : Int = 0
                 opcion match{
                     //Me verifica que se le haya ingresado un numero
                     case Success(s) => num = s
                     case Failure(f) => num = 0
                 }
 
-                if (num-1  >= 0 && num < cant_vuelos)
+                if (num-1  >= 0 && num <= cant_vuelos)
                     return aeropuerto.getVuelos()(num-1)
 
                 
@@ -145,7 +163,8 @@ object Main extends App{
                         val cantidad = aeropuerto.getSalaAbordaje().verificarDisponibilidadSillas(vuelo.referencia)
                         println("La cantidad de sillas disponibles son " + cantidad)
                     }
-                    case 4 => ver = false
+                    case 4 => aeropuerto.getSalaAbordaje().verificarServiciosEspeciales()
+                    case 5 => ver = false
                     case _ => println("Hubo un error a la hora de escoger")
                 }
 
@@ -196,17 +215,18 @@ object Main extends App{
 
             def menuSala() {
 
-                println("===============================")
+                println("\n==============================================")
                 println("Bienvenido a la sala de abordaje")
-                println("===============================")
+                println("==============================================")
                 println("Ref. de vuelo:  " + vuelo.referencia)
-                println("===============================")
+                println("==============================================")
                 println("Que desea hacer: ")
                 println("[1] Verificar los doc. de la tripulacion")
                 println("[2] Verificar los nombres de la tripulacion")
                 println("[3] Verificar disponibilidad de sillas")
-                println("[4] salir")
-                println("===============================")
+                println("[4] Verificar servicios especiales")
+                println("[5] salir")
+                println("===============================================")
             }
         }
 
@@ -219,7 +239,7 @@ object Main extends App{
                 menuPax()
                 println("Porfavor seleccione una opcion:")
                 var opcion : Try[Int] = Try(StdIn.readInt())
-                var num : Int = 0;
+                var num : Int = 0
                 
                 opcion match{
                     case Success(s) => num = s
@@ -250,6 +270,8 @@ object Main extends App{
                         println("Reporte asignado...")
                         val nuevo_reporte = aeropuerto.getPaxControl().asignarReporte(indice, "00:00")
                         aeropuerto.agregarReporte(nuevo_reporte)
+                        aeropuerto.update()
+
                     }
                     case 3 => {
 
@@ -287,7 +309,6 @@ object Main extends App{
                         aeropuerto.update()
                     }
                     case 5 => {
-                        
 
                     }
                     case 6 => {
@@ -382,8 +403,8 @@ object Main extends App{
             
             def menuPax() {
                 
-                println("==========================================")
-                println("Bienvenidad al PaxControl")
+                println("\n==========================================")
+                println("|        Bienvenidad al PaxControl       |")
                 println("==========================================")
                 println("Ref. de vuelo:  " + vuelo.referencia)
                 println("==========================================")
@@ -399,16 +420,16 @@ object Main extends App{
                 println("[10] Asignar hora final de abordaje")
                 println("[11] Asignar el primer pasajero en abordar")
                 println("[12] salir")
-                println("==========================================")
+                println("==========================================\n")
             }
         }   
     }
 
     def menu() : Unit = {
         
-        println("===============================")
-        println("Bienvenido Al Sistema del aeropuerto")
-        println("===============================")
+        println("\n=======================================")
+        println("| Bienvenido Al Sistema del aeropuerto |")
+        println("=======================================")
         println("Que desea hacer: ")
         println("[1] Chek In")
         println("[2] Sala de abordaje")
@@ -416,7 +437,10 @@ object Main extends App{
         println("[4] Ver pasajeros")
         println("[5] Ver vuelos")
         println("[6] Ver reportes")
-        println("[] salir")
-        println("===============================")
+        println("[7] Crear vuelo")
+        println("[8] Ver aviones en pista")
+        println("=======================================")
+        println("[9] salir                              |")
+        println("=======================================\n")
     }
 }

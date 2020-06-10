@@ -125,6 +125,30 @@ class SalaAbordaje (vuelos : List[Vuelo]){
         return sillas_dip
     } 
 
+
+    def verificarServiciosEspeciales() : Unit = {
+
+        var bandera : Boolean = false
+
+        println("\n------------------------------------")
+        println("|          Servicios especiales     |")
+        println("------------------------------------\n")
+        for (v <- _vuelos) {
+            for ( p <- v.pasajeros) {
+                if (p.servicio != null) {
+                    println("+ El pasajero " + p.nombre + " requiere " + p.servicio.descripcion)
+                    bandera = true
+                }
+            }
+        }
+
+        if (bandera) {
+            println("\n------------------------------------")
+            println("| Llamando a servicios especiales...|")
+            println("------------------------------------\n")
+        } 
+        else println("\nNo se requieren servicios especiales.\n")
+    }
     def verificarPasajerosSillaRueda() : Unit = {}
     
 }

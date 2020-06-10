@@ -1,6 +1,6 @@
 package elementos
 
 class ServicioInfantil extends ServicioEspecial{
-    override var _descripcion = "ServicioInfantil"
+    override var _descripcion = "servicio infantil"
 
 }

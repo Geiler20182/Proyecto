@@ -1,0 +1,194 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:1:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.GivenWhenThen[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:2:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.FeatureSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:7:30: not found: type FeatureSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass PaxControlTest extends FeatureSpec with GivenWhenThen {[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:7:47: not found: type GivenWhenThen[0m
+[0m[[0m[31merror[0m] [0m[0mclass PaxControlTest extends FeatureSpec with GivenWhenThen {[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:8:34: not enough arguments for constructor PaxControl: (nuevos_vuelos: List[Pista.Vuelo], aviones: List[Pista.Avion])Controles.PaxControl.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters nuevos_vuelos, aviones.[0m
+[0m[[0m[31merror[0m] [0m[0m    var paxCotrol : PaxControl = new PaxControl[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:10:27: not enough arguments for constructor Piloto: (name: String, id: String, edad: Int)personas.Piloto.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters name, id, edad.[0m
+[0m[[0m[31merror[0m] [0m[0m    var piloto : Piloto = new Piloto[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:12:12: value _genero is not a member of personas.Piloto[0m
+[0m[[0m[31merror[0m] [0m[0m    piloto._genero = "M" // Masculino[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:14:29: not enough arguments for constructor Azafata: (name: String, id: String, edad: Int)personas.Azafata.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters name, id, edad.[0m
+[0m[[0m[31merror[0m] [0m[0m    var azafata : Azafata = new Azafata[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:16:13: value _genero is not a member of personas.Azafata[0m
+[0m[[0m[31merror[0m] [0m[0m    azafata._genero = "P" // Pansexual[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:18:37: not enough arguments for constructor Tripulacion: (n_pilotos: List[personas.Piloto], n_azafatas: List[personas.Azafata])personas.Tripulacion.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters n_pilotos, n_azafatas.[0m
+[0m[[0m[31merror[0m] [0m[0m    var tripulacion : Tripulacion = new Tripulacion[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:21:25: not enough arguments for constructor Avion: (r: String)Pista.Avion.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter r.[0m
+[0m[[0m[31merror[0m] [0m[0m    var avion : Avion = new Avion[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:22:31: not enough arguments for constructor Pasajero: (name: String, id: String, edad: Int)personas.Pasajero.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters name, id, edad.[0m
+[0m[[0m[31merror[0m] [0m[0m    var pasajero : Pasajero = new Pasajero[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:24:14: value _numSilla is not a member of personas.Pasajero[0m
+[0m[[0m[31merror[0m] [0m[0m    pasajero._numSilla = 100[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:27:17: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m    var vuelo : Vuelos = new Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:27:30: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m    var vuelo : Vuelos = new Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:43:5: not found: value feature[0m
+[0m[[0m[31merror[0m] [0m[0m    feature("Enviar Informacion") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:44:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("Información de los tripulantes") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:45:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dado un grupo de tripulantes")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:48:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Cuando se agrega a un vuelo los tirpulantes")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:51:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("Se envía la información de los tripulantes")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:57:5: not found: value feature[0m
+[0m[[0m[31merror[0m] [0m[0m    feature("Asignar comida") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:58:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("Comida para un vuelo") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:59:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dada una cantidad de comida")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:62:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Cuando haya un vuelo para asignarle")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:63:26: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m            var vuelo2 : Vuelos = vuelo[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:66:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("Se le asigna la cantidad de comida deseada")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:72:5: not found: value feature[0m
+[0m[[0m[31merror[0m] [0m[0m    feature("Asignar Combustible") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:73:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("Cobustible para el avión") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:74:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dado unca cantidad de combustible")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:77:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Cuando haya un vuelo para asignarle combustible")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:78:26: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m            var vuelo3 : Vuelos = vuelo[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:81:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("Se le asigna el combustible deseado")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:87:5: not found: value feature[0m
+[0m[[0m[31merror[0m] [0m[0m    feature("Verificar Fallas") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:89:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("El vuelo no tiene fallas") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:90:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dado que no hay una falla")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:93:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Cuando haya un vuelo que no tenga alguna falla")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:94:26: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m            var vuelo4 : Vuelos = vuelo[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:97:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("El vuelo va a decir que no tiene ninguna falla")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:101:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("El vuelo puede contener una falla") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:102:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dada una falla")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:105:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Cuando haya un vuelo que pueda tener alguna falla")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:106:26: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m            var vuelo5 : Vuelos = vuelo[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:110:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("Se va a notificar la falla del vuelo")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:116:5: not found: value feature[0m
+[0m[[0m[31merror[0m] [0m[0m    feature("Asignar vuelo con avión") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:117:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("El vuelo está esperando un avión") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:118:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dado un avión desocupado")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:119:34: not enough arguments for constructor Avion: (r: String)Pista.Avion.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter r.[0m
+[0m[[0m[31merror[0m] [0m[0m            var avion2 : Avion = new Avion[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:122:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Cuando se le asigne a un vuelo")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:123:26: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m            var vuelo6 : Vuelos = vuelo[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:127:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("El avión desocupado va a tener un vuelo asignado")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:132:5: not found: value feature[0m
+[0m[[0m[31merror[0m] [0m[0m    feature("Asignar reportes") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:133:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("Hacer un reporte de un vuelo") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:134:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dado un reporte")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:138:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Cuando haya un vuelo")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:139:26: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m            var vuelo7 : Vuelos = vuelo[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:142:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("Se hará un reporte del vuelo")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:148:5: not found: value feature[0m
+[0m[[0m[31merror[0m] [0m[0m    feature("Asignar Matricula") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:149:9: not found: value scenario[0m
+[0m[[0m[31merror[0m] [0m[0m        scenario("Un avión necesita una matricula según el vuelo") {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:150:13: not found: value Given[0m
+[0m[[0m[31merror[0m] [0m[0m            Given("Dada una matricula")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:153:13: not found: value When[0m
+[0m[[0m[31merror[0m] [0m[0m            When("Haya un vuelo con un avión sin matricula")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:154:26: not found: type Vuelos[0m
+[0m[[0m[31merror[0m] [0m[0m            var vuelo8 : Vuelos = vuelo[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Mejia\Documents\POO\ProyectoVersion4\Proyecto\src\test\scala\TestBDD\PaxControlTest.scala:158:13: not found: value Then[0m
+[0m[[0m[31merror[0m] [0m[0m            Then("El avion sin matricula va a tener una")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m62 errors found[0m
