@@ -7,7 +7,6 @@ import scala.io._
 import scala.util._
 
 class ModuloCheckIn(pasa : Pasajero){
-
     var dimensionMaleta : Array[Int] = Array(40, 55, 23) //Restricciones de las maletas
     var peso : Int = 20 //Peso maximo de las maletas
     var cobro : Int = 10 //El cobro por exceso y por
@@ -19,20 +18,24 @@ class ModuloCheckIn(pasa : Pasajero){
     println("La ciudad de inicio del pasajero es " + pasaje.ciudadIni)
     println("La ciudad de finalización del pasajero es " + pasaje.ciudadFin)
     println("El vuelo del pasajero es " + pasaje.vuelo)
-    //pasajero.pasaje = pasaje //Le añado el pasaje al pasajero para hacer pruebas
+
+    def menu() : String ={
+        var str : String = "===============================\n"
+        str = str + "Bienvenido Al CheckIn\n"
+        str = str + "===============================\n"
+        str = str + "Que desea hacer: \n"
+        str = str + "[1] Verificar datos\n"
+        str = str + "[2] Asociar Un servicio\n"
+        str = str + "[3] Pesar la maleta\n"
+        str = str + "[4] salir\n"
+        str = str + "==============================="
+        return str
+    }
 
     def inicio() : Unit = {
         //Esta función es la que me inicializa lo que seria el modulo del check in y sus funcionalidades
         while(ver){
-            println("===============================")
-            println("Bienvenido Al CheckIn")
-            println("===============================")
-            println("Que desea hacer: ")
-            println("[1] Verificar datos")
-            println("[2] Asociar Un servicio")
-            println("[3] Pesar la maleta")
-            println("[4] salir")
-            println("===============================")
+            println(menu())
             var opcion : Try[Int] = Try(StdIn.readInt())
             var num : Int = 0;
             opcion match{
@@ -174,8 +177,8 @@ class ModuloCheckIn(pasa : Pasajero){
                 //Me crea el los servicios de siila
                 var servicio : ServicioSilla = new ServicioSilla
                 var ver : Boolean = checkIn.asociarServico(pasajero, servicio, 0)
-                println("Servicio agregado con exito")
                 pasajero.servicio = servicio
+                println("Servicio agregado con exito")
                 //println(pasajero.servicio.descripcion)+
                 
             }
@@ -190,8 +193,8 @@ class ModuloCheckIn(pasa : Pasajero){
                     case Failure(f) => ver = checkIn.asociarServico(pasajero, servicio, 0) //Lo mas probable es que me devuelva false, a menos que el costo de servicio sea de 0
                 }
                 if(ver){
+                    pasajero.servicio = servicio
                     println("servicio agregado")
-                    pasajero.servicio = checkIn.pasajero.servicio
                 }
 
                 else{
@@ -214,8 +217,8 @@ class ModuloCheckIn(pasa : Pasajero){
                     case Failure(f) => ver = checkIn.asociarServico(pasajero, servicio, 0) //Lo mas probable es que me devuelva false, a menos que el costo de servicio sea de 0
                 }
                 if(ver){
+                    pasajero.servicio = servicio
                     println("servicio agregado")
-                    pasajero.servicio = checkIn.pasajero.servicio
                 }
 
                 else{
@@ -226,7 +229,4 @@ class ModuloCheckIn(pasa : Pasajero){
     }
 
     def getPasajero() : Pasajero = return pasajero
-
-    def update() : Unit = {
-    }
 }

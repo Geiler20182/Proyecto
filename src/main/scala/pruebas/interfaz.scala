@@ -20,8 +20,7 @@ object Main extends App{
 
     while(ver){
 
-        menu()
-
+        var str : String = menu()
         println("Opcion: ")
         var opcion : Try[Int] = Try(StdIn.readInt())
         var num : Int = 0
@@ -568,9 +567,8 @@ object Main extends App{
         }   
     }
 
-    def menu() : Unit = {
-        
-        println("\n=======================================")
+    def menu() : String = {
+        println("=======================================")
         println("| Bienvenido Al Sistema del aeropuerto |")
         println("=======================================")
         println("Que desea hacer: ")
@@ -584,6 +582,7 @@ object Main extends App{
         println("[8] Ver aviones en pista")
         println("=======================================")
         println("[9] salir                              |")
-        println("=======================================\n")
+        println("=======================================")
+        return "=======================================\n| Bienvenido Al Sistema del aeropuerto |\n=======================================\nQue desea hacer: \n[1] Chek In"
     }
 }

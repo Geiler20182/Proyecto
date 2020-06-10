@@ -19,7 +19,7 @@ object BBDD {
     
     def cargarVuelos() : List[Vuelo] = {
 
-        val archivo =  "C:\\Users\\Mejia\\Documents\\POO\\ProyectoVersion4\\Proyecto\\src\\main\\scala\\baseDeDatos\\datos\\vuelos.txt"
+        val archivo =  "C:\\Users\\guidi\\Documents\\Universidad\\POO\\Proyecto\\ProyectoPo\\src\\main\\scala\\baseDeDatos\\datos\\vuelos.txt"
         try { 
             
             var datos : List[List[String]] = List()
@@ -86,7 +86,7 @@ object BBDD {
 
     def cargarAviones() : List[Avion] = {
 
-        val archivo =  "C:\\Users\\Mejia\\Documents\\POO\\ProyectoVersion4\\Proyecto\\src\\main\\scala\\baseDeDatos\\datos\\aviones.txt"
+        val archivo =  "C:\\Users\\guidi\\Documents\\Universidad\\POO\\Proyecto\\ProyectoPo\\src\\main\\scala\\baseDeDatos\\datos\\aviones.txt"
         
         try { 
             
@@ -104,7 +104,7 @@ object BBDD {
 
     def cargarTripulacion(archivo : String) : Tripulacion = {
 
-        val arch =  "C:\\Users\\Mejia\\Documents\\POO\\ProyectoVersion4\\Proyecto\\src\\main\\scala\\baseDeDatos\\datos\\" + archivo
+        val arch =  "C:\\Users\\guidi\\Documents\\Universidad\\POO\\Proyecto\\ProyectoPo\\src\\main\\scala\\baseDeDatos\\datos\\" + archivo
         
         try { 
 
@@ -150,7 +150,7 @@ object BBDD {
 
     def cargarPasajeros(archivo : String) : List[Pasajero] = {
         
-        val arch =  "C:\\Users\\Mejia\\Documents\\POO\\ProyectoVersion4\\Proyecto\\src\\main\\scala\\baseDeDatos\\datos\\" + archivo
+        val arch =  "C:\\Users\\guidi\\Documents\\Universidad\\POO\\Proyecto\\ProyectoPo\\src\\main\\scala\\baseDeDatos\\datos\\" + archivo
         
         try { 
             
@@ -176,7 +176,7 @@ object BBDD {
 
     def cargarPasaje(archivo : String) : Pasaje = {
         
-        val arch =  "C:\\Users\\Mejia\\Documents\\POO\\ProyectoVersion4\\Proyecto\\src\\main\\scala\\baseDeDatos\\datos\\" + archivo
+        val arch =  "C:\\Users\\guidi\\Documents\\Universidad\\POO\\Proyecto\\ProyectoPo\\src\\main\\scala\\baseDeDatos\\datos\\" + archivo
         
         try { 
 
@@ -192,7 +192,7 @@ object BBDD {
                 else if (lst(0) == "destino")
                     destino = lst(1)
             }   
-            return  new Pasaje(origen, destino, "")
+            return  new Pasaje(origen, destino, "A315")
 
 
         } catch {

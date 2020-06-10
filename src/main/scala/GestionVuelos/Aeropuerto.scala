@@ -33,26 +33,28 @@ class Aeropuerto {
     // Metodos
 
     def aplicarCheckIn(pasajero : Pasajero) : Pasajero = {
-
         var check : ModuloCheckIn = new ModuloCheckIn(pasajero)
         check.inicio()
 
         return check.getPasajero()
     }
 
-    def verPasajeros() : Unit = {
-
-        println("\n--------------------------")
+    def verPasajeros() : String = {
+        var str : String = "--------------------------\n|         PASAJEROS       |\n--------------------------"
+        println("--------------------------")
         println("|         PASAJEROS       |")
         println("--------------------------")
         var cont : Int = 1
         for (p <- _pasajeros) {
+            str = str + "[" + cont.toString  + "] " + p.nombre + "\n"
             println("[" + cont + "] " + p.nombre)
             cont += 1
         }
         println("--------------------------")
         println("| Total pasajeros: " + (cont-1) + "      |")
-        println("--------------------------\n")
+        println("--------------------------")
+        str = str + "--------------------------\n| Total pasajeros: " + (cont-1).toString + "      |\n--------------------------"
+        return str
     }
 
     def verVuelos(detalles : Boolean ) :  Unit = {
@@ -90,11 +92,10 @@ class Aeropuerto {
     }
 
     def checkIn(num : Int) : Unit = {
-
         if (_pasajeros.length > 0) {
             if ( num-1 >= 0 && num-1 < _pasajeros.length) {
-                _pasajeros(num-1).servicio = aplicarCheckIn(_pasajeros(num-1)).servicio
-                
+                //_pasajeros(num-1).servicio = aplicarCheckIn(_pasajeros(num-1)).servicio
+                println(aplicarCheckIn(_pasajeros(num-1)).servicio)
                 var p : Int = 0
                 var v : Int = 0
 
