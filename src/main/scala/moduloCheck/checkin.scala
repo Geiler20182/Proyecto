@@ -12,14 +12,10 @@ class CheckIn(dimMal : Array[Int], peso : Int, exc : Int, cob : Int){
     var _pesoMaxMal : Int = peso //Peso max de las maletas
     var _exceso : Int = exc //El valor que hay que pagar por exceso
     var _cobro : Int  = cob //El cobro de algun servicio
-    var _pasajero_temp : Pasajero = _
-    var _pasaje_temp  : Pasaje = _
     //Metodos
 
     //Getters 
 
-    def pasaje = _pasaje_temp
-    def pasajero = _pasajero_temp
     def dimMaleta = _dimMaleta
     def pesoMaxMal = _pesoMaxMal
     def exceso = _exceso
@@ -98,13 +94,11 @@ class CheckIn(dimMal : Array[Int], peso : Int, exc : Int, cob : Int){
     def asociarMaleta(pasajero : Pasajero, maleta : Maleta) : Unit ={
         //Le asocia a un pasajero su maleta
         pasajero.maleta = maleta
-        _pasajero_temp = pasajero
     }
 
     def asociarSilla(pasaje : Pasaje, silla : String) : Unit ={
         //Le asocia al pasaje la silla que deberia estar
         pasaje.silla = silla
-        _pasaje_temp = pasaje
     }
 
     def asignarEncargado(persona : Infante, encargado : Trabajador) : Unit ={
