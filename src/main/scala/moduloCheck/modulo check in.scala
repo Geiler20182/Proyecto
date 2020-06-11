@@ -135,6 +135,7 @@ class ModuloCheckIn(pasa : Pasajero){
 
                     if(flag && pesos >= cantidad){ //En caso de que todo cumpla con los parametors se le asgina la maleta
                         checkIn.asociarMaleta(pasajero, maleta)
+                        println("La maleta fue asociada correctamente")
                         //println(pasajero.maleta.peso) verifico que el pasajero tenga la maleta a traves del peso
                     }
 

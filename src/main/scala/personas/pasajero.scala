@@ -12,7 +12,7 @@ class Pasajero(name : String, id : String, edad : Int) extends Persona{
 
     //Propios
     var _pasaje : Pasaje = _
-    var _maleta : Maleta = _
+    var _maleta : Maleta = null
     var _servicio : ServicioEspecial = null
     var _chekeado : Boolean = false
 
@@ -32,13 +32,8 @@ class Pasajero(name : String, id : String, edad : Int) extends Persona{
         }
     }
 
-    def maleta_= (mal : Maleta) ={
-        //Necesita que el pasajero no tenga todavia una maleta
-        if(_maleta == null){
-            _maleta = mal
-        }
-    }
-
+    def maleta_= (mal : Maleta) = _maleta = mal
+    
     def servicio_= (serv : ServicioEspecial) = _servicio = serv
 
     def chekeado_= (bool : Boolean) = _chekeado = true //Me dice que el pasajero ya paso por el chek-in
