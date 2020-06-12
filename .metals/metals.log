@@ -39,3 +39,67 @@ something's wrong: no file:///c%3A/Users/HP/Desktop/Universidad/Tercer%20Semestr
 2020.06.08 18:42:48 INFO  no build target: using presentation compiler with only scala-library
 2020.06.08 18:42:51 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
 2020.06.08 18:44:24 INFO  shutting down Metals
+2020.06.10 11:50:49 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO'
+2020.06.10 11:50:50 INFO  time: initialize in 0.92s
+2020.06.10 11:50:51 INFO  no build target: using presentation compiler with only scala-library
+2020.06.10 11:50:55 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Trabajadores\Piloto.scala
+2020.06.10 11:50:55 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Estadisticas.scala
+jun 10, 2020 11:50:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6
+jun 10, 2020 11:50:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9
+jun 10, 2020 11:50:55 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 10
+2020.06.10 11:51:03 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\GestionVuelos\Aeropuerto.scala
+2020.06.10 11:51:23 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Reportes.scala
+2020.06.10 11:51:27 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\GestionVuelos\Aeropuerto.scala
+2020.06.10 11:51:32 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\complementos\GeneradorId.scala
+2020.06.10 11:54:17 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Estadisticas.scala
+2020.06.10 11:54:21 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
+2020.06.10 11:54:30 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Reportes.scala
+2020.06.10 11:54:53 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\GestionVuelos\Aeropuerto.scala
+2020.06.10 11:55:02 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloCheck\checkin.scala
+2020.06.10 11:55:06 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Avion.scala
+2020.06.10 11:55:26 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Vuelos.scala
+2020.06.10 11:56:20 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Estadisticas.scala
+2020.06.10 11:56:24 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
+2020.06.10 11:56:50 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Reportes.scala
+2020.06.10 11:56:58 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\maletas.scala
+2020.06.10 11:57:01 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\servicios\Compensacion.scala
+2020.06.10 11:57:02 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\servicios\servicioInfantil.scala
+2020.06.10 11:57:02 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\servicios\serviciomascota.scala
+2020.06.10 11:57:04 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\servicios\serviciomascotacabina.scala
+2020.06.10 11:57:04 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\servicios\serviciosEspeciales.scala
+2020.06.10 11:57:05 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\servicios\serviciosilla.scala
+2020.06.10 11:57:09 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\maletas.scala
+2020.06.10 11:57:14 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\elementos\pasaje.scala
+2020.06.10 11:57:19 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\GestionVuelos\Aeropuerto.scala
+2020.06.10 11:57:22 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloCheck\checkin.scala
+2020.06.10 11:57:30 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloCheck\modulo check in.scala
+2020.06.10 11:57:33 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloCheck\checkin.scala
+2020.06.10 11:57:36 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloCheck\modulo check in.scala
+2020.06.10 11:57:48 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloSalaAbordaje\SalaAbordaje.scala
+2020.06.10 11:58:33 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Vuelos.scala
+2020.06.10 11:58:43 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
+2020.06.10 11:59:00 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloSalaAbordaje\SalaAbordaje.scala
+2020.06.10 12:16:34 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloCheck\checkin.scala
+2020.06.10 12:19:38 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Estadisticas.scala
+2020.06.10 12:19:39 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\PaxControl.scala
+2020.06.10 12:19:44 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Controles\Reportes.scala
+2020.06.10 12:19:52 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\GestionVuelos\Aeropuerto.scala
+2020.06.10 12:19:54 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloCheck\checkin.scala
+2020.06.10 12:19:58 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\moduloSalaAbordaje\SalaAbordaje.scala
+2020.06.10 12:26:07 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Trabajadores\Azafata.scala
+2020.06.10 12:26:53 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Trabajadores\Piloto.scala
+2020.06.10 12:26:55 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\Trabajadores\Tripulacion.scala
+2020.06.10 12:27:02 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\infante.scala
+2020.06.10 12:27:06 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\pasajero.scala
+2020.06.10 12:27:16 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\persona.scala
+2020.06.10 12:27:18 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\personas\trabajador.scala
+2020.06.10 12:27:22 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Avion.scala
+2020.06.10 12:27:35 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\Pista\Vuelos.scala
+2020.06.10 12:28:37 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\GestionVuelos\Aeropuerto.scala
+2020.06.10 12:28:53 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\pruebas\interfaz.scala
+2020.06.10 12:29:22 WARN  no build target for: C:\Users\HP\Desktop\Universidad\Tercer Semestre\Programación Orientada a Objetos\Proyecto Final POO\src\main\scala\GestionVuelos\Aeropuerto.scala
+something's wrong: no file:///c%3A/Users/HP/Desktop/Universidad/Tercer%20Semestre/Programaci%C3%B3n%20Orientada%20a%20Objetos/Proyecto%20Final%20POO/src/main/scala/GestionVuelos/Aeropuerto.scala in List[Pista.Vuelo]RangePosition(file:///c%3A/Users/HP/Desktop/Universidad/Tercer%20Semestre/Programaci%C3%B3n%20Orientada%20a%20Objetos/Proyecto%20Final%20POO/src/main/scala/GestionVuelos/Aeropuerto.scala, 461, 461, 472)
+2020.06.10 12:45:51 INFO  shutting down Metals
